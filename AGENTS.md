@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+- Routing and cost math live in src/lib/optimizer.ts and src/lib/metrics.ts as pure typed functions (no React) so they can be tested and swapped.
+- Roles live in public.user_roles (dispatcher/driver) checked via has_role(); the first account becomes dispatcher by trigger, everyone else is invited by a dispatcher through the inviteMember server function — never derive roles from user metadata.
+- Road distances and route shapes come from OSRM's public driving profile (src/lib/roads.ts); the optimizer takes an injectable DistFn so straight-line remains the fallback if the service is down.
