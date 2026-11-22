@@ -16,16 +16,16 @@
  {
   "capability": "records",
   "source": "previous Lovable Cloud database",
-  "outcome": "migrate",
-  "status": "pending",
-  "next_action": "request CSV exports"
+  "outcome": "skipped by user",
+  "status": "accepted",
+  "next_action": "import later if user provides exports"
  },
  {
   "capability": "auth identities",
   "source": "previous Cloud auth (email/password, invites)",
-  "outcome": "migrate",
-  "status": "pending",
-  "next_action": "request user export; demo dispatcher sign-in verified"
+  "outcome": "skipped by user",
+  "status": "accepted",
+  "next_action": "import later if user provides exports"
  },
  {
   "capability": "authorization",
